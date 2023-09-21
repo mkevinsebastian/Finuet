@@ -1,0 +1,320 @@
+/* ====== Web ====== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:#000000;
+}
+
+/* ===== scrollbar ===== */
+::-webkit-scrollbar{
+  width: 8px;
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #ffffff;
+  border-radius: 6px;
+}
+
+/* ====== Navbar ====== */
+header {
+  position: absolute;
+  background-color: #000000;
+  margin-top: 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active {
+  background: #fff;
+  color: #000000;
+}
+
+/* ====== Main ====== */
+
+.articleBackground img{
+   width: 100%;
+   height: 40%;
+   filter: brightness(30%);
+   border-bottom-left-radius: 100px;
+   border-bottom-right-radius: 100px;
+}
+
+.articleBackground h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* RISOTTO */
+
+.risotto {
+    display: flex;
+    position: relative;   
+    height: 450px;
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.risotto img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border-radius: 40px;
+    width: 40%;
+    height: auto;
+}
+
+.risotto h2 {
+    margin-left: 230px;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+.calories {
+    position: absolute;
+    left: 940px;
+    top: 130px;
+    height: 80px;
+    width: 180px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+}
+
+.textCal {
+    text-align: center;
+    padding-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.protein {
+    position: absolute;
+    left: 1160px;
+    top: 130px;
+    height: 80px;
+    width: 180px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+}
+
+.textPro {
+    text-align: center;
+    padding-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.carbs {
+    position: absolute;
+    left: 940px;
+    top: 250px;
+    height: 80px;
+    width: 180px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+}
+
+.textCarbs {
+    text-align: center;
+    padding-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fat {
+    position: absolute;
+    left: 1160px;
+    top: 250px;
+    height: 80px;
+    width: 180px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+}
+
+.textFat {
+    text-align: center;
+    padding-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ROAST CHICKEN */
+
+.roastChick {
+    display: flex;
+    position: relative;   
+    height: 450px;
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.roastChick img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border-radius: 40px;
+    width: 40%;
+    height: auto;
+}
+
+.roastChick h2 {
+    margin-left: 175px;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+/* THAI PRAWN */
+
+.thaiPrawn {
+    display: flex;
+    position: relative;   
+    height: 450px;
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.thaiPrawn img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border-radius: 40px;
+    width: 40%;
+    height: auto;
+}
+
+.thaiPrawn h2 {
+    margin-left: 200px;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+/* CHICKEN AND SPRING ONION PANCAKE */
+
+.chickOnion {
+    display: flex;
+    position: relative;   
+    height: 450px;
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.chickOnion img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border-radius: 40px;
+    width: 40%;
+    height: auto;
+}
+
+.chickOnion h2 {
+    margin-left: 170px;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+/* MEXICAN RICE  */
+
+.mexicanRice {
+    display: flex;
+    position: relative;   
+    height: 450px;
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.mexicanRice img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border-radius: 40px;
+    width: 40%;
+    height: auto;
+}
+
+.mexicanRice h2 {
+    margin-left: 140px;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+/* ===== footer ===== */
+  .footer {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+    background-color: #000000;
+  }
+
+  .footer h4{
+    margin-bottom: 25px;
+    margin-top: 35px;
+    font-weight: 600;
+  }
+
+.icons {
+ font-size: 30px;
+  color: linear-Gradient(to bottom, #3fc25b, #68dbeb);
+  
+}

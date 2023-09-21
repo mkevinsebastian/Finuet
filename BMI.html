@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FINUET</title>
+  <link rel="stylesheet" type="text/css" href="BMIStyle.css" />
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" type="x-icon" href="images/Logo.png">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo"> FINUET </a>
+    <ul>
+      <li><a href="index.html"> Home </a></li>
+      <li><a href="#" class="active"> BMI </a></li>
+      <li><a href="MealPlan.html"> Meal Plan </a></li>
+      <li><a href="News.html"> News </a></li>
+      <li><a href="Subscription.html"> Subscription </a></li>
+      <li><a href="Account.html"> Account </a></li>
+    </ul>
+  </header>
+
+
+  <div class="container">
+    <h2>BMI Calculator</h2>
+    <label for="gender">Gender:</label>
+    <select id="gender">
+      <option value="woman">Woman</option>
+      <option value="man">Man</option>
+    </select>
+    <label for="height">Height (cm):</label>
+    <input type="text" id="height" placeholder="Enter height">
+    <label for="weight">Weight (kg):</label>
+    <input type="text" id="weight" placeholder="Enter weight">
+    <button onclick="calculateBMI()">Calculate</button>
+    <div id="result"></div>
+  </div>
+
+
+</body>
+
+</html>
